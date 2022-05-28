@@ -66,6 +66,111 @@ arr6.splice(0,0,10);
 console.log(arr6);                      //[ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
 
 
+let arr7 = [1,2,3,4,5];
+console.log(
+    arr7.map((element,index)=>{
+        return element*100
+    })
+);
+//[ 100, 200, 300, 400, 500 ]
+
+
+let arr8 = [100,200,300,400,500];
+console.log(
+    arr8.map((element,index)=>{
+        return element/100;
+    })
+);
+//[ 1, 2, 3, 4, 5 ]
+
+let arr9 = [1,2,3,4,5];
+console.log(
+    arr9.map((element,index)=>{
+        return [element];
+    })
+);
+//[[1],[2],[3],[4],[5]]
+
+let arr10 = [1,2,3,4,5];
+let arr11 = ["one","two","three","four","five"];
+console.log(
+    arr10.map((element,index)=>{
+        return [element,arr11[index]]
+    })
+);
+//[[1,"one"], [2,"two"], [3,"three"],[4,"four"],[5,"five"]]
+
+
+let arr12 = [100,200,300,400,500];
+console.log(
+    arr12.filter((element,index)=>{
+        return element>=300;
+    })
+);
+//[ 300, 400, 500 ]
+
+let arr13 = [1,2,3,4,5];
+console.log(
+    arr13.filter((element,index)=>{
+        return element<=2;
+    })
+);
+//[ 1, 2 ]
+
+let arr14 = [1,2,3,4,5];
+console.log(
+    arr14.map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element<=300;
+    })
+);
+//[ 100, 200, 300 ]
+
+
+let arr15 = [1,2,3,4,5];
+console.log(
+    arr15.reduce((firstElement,nextElment)=>{
+        return firstElement+nextElment;
+    })
+);
+//15
+
+
+let arr16 = [1,2,3,4,5];
+console.log(
+    arr16.map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element<=500;
+    }).reduce((firstElement,nextElment)=>{
+        return firstElement+nextElment;
+    })
+);
+//1500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
