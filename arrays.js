@@ -212,27 +212,15 @@ console.log(
 //[ 10, 20, 30, 40 ]
 
 
-//sort()
-//ascending order / decending order
+//sort
+//ascending / decending
 let arr26 = [1,5,2,4,3];
-//[1,2,3,4,5]  //ascending
-//[5,2,3,2,1]  //decending
-
 console.log(
     arr26.sort((num1,num2)=>{
-        return num1-num2;
+        return num1-num2
     })
 );
 //[ 1, 2, 3, 4, 5 ]
-
-console.log(
-    arr26.sort((num1,num2)=>{
-        return num1-num2;
-    })[1]
-);
-//2
-
-
 
 console.log(
     arr26.sort((num1,num2)=>{
@@ -241,12 +229,151 @@ console.log(
 );
 //[ 5, 4, 3, 2, 1 ]
 
+
+let arr27 = [10,50,20,40,30];
+//2nd max ---- 40
+//2nd min ---- 20
 console.log(
-    arr26.sort((num1,num2)=>{
+    arr27.sort((num1,num2)=>{
         return num2-num1;
     })[1]
+);   //40
+console.log(
+    arr27.sort((num1,num2)=>{
+        return num1-num2;
+    })[1]
+);  //20
+
+
+let arr28 = [1,2,3,4,5];
+//some()
+console.log(
+    arr28.some((element,index)=>{
+        return element<=1;
+    })
+);
+//true
+
+
+let arr29 = [10,20,30,40,50];
+console.log(
+    arr29.some((element,index)=>{
+        return element<10;
+    })
+);
+//false
+
+
+//every()
+let arr30 = [10,20,30,40,50];
+console.log(
+    arr30.every((element,index)=>{  
+        return element<=50;
+    })
+);
+//true
+
+let arr31 = [10,20,30,40,50];
+console.log(
+    arr31.every((element,index)=>{
+        return element<50;
+    })
+);
+//false
+
+
+let arr32 = [10,20,30,40,50];
+console.log(
+    arr32.find((element,index)=>{
+        return element == 30;
+    })
+); 
+//30
+console.log(
+    arr32.find((element,index)=>{
+        return element == 100;
+    })
+);
+//undefined
+
+let arr33 = [10,20,30,40,50];
+console.log(
+    arr33.includes(20)
+);
+//true
+console.log(
+    arr33.includes(200)
+);
+//false
+let arr34 = [10,20,30,40,50];
+console.log(
+    arr34.findIndex((element,index)=>{
+        return element == 20;
+    })
+);
+//1
+console.log(
+    arr34.findIndex((element,index)=>{
+        return element == 50;
+    })
 );
 //4
+console.log(
+    arr34.findIndex((element,index)=>{
+        return element == 100;
+    })
+);
+//-1
+
+let arr35 = [10,20,30,40,50];
+arr35.splice(arr35.findIndex((element,index)=>{
+    return element == 30;
+}),1);
+console.log(arr35);
+//[ 10, 20, 40, 50 ]
+
+
+let arr36 = [10,100,1000,10000,20,200,2000,20000];
+arr36.splice(arr36.findIndex((element,index)=>{
+    return element == 10000;
+}),1);
+console.log(arr36);
+
+
+//forEach()
+let arr37 = [1,2,3,4,5];
+arr37.forEach((element,index)=>{
+    console.log(element);
+});
+
+
+//for....of()
+let arr38 = [10,20,30,40,50];
+for(let x of arr38){
+    console.log(x);
+}
+
+
+//for.....in
+let obj = {
+    "key1":"Hello_1",
+    "key2":"Hello_2",
+    "key3":"Hello_3"
+};
+for(let x in obj){
+    console.log(x);
+    console.log(obj[x]);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
