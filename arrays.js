@@ -353,6 +353,7 @@ for(let x of arr38){
     console.log(x);
 }
 
+//9030001847
 
 //for.....in
 let obj = {
@@ -364,6 +365,141 @@ for(let x in obj){
     console.log(x);
     console.log(obj[x]);
 }
+
+
+//reverse()
+//it is used to reverse the array elements
+let arr39 = [10,20,30,40,50];
+console.log(
+    arr39.reverse()
+);
+//[ 50, 40, 30, 20, 10 ]
+
+let arr40 = ["Hello_1","Hello_2","Hello_3","Hello_4","Hello_5"];
+console.log(
+    arr40.reverse()
+);
+//[ 'Hello_5', 'Hello_4', 'Hello_3', 'Hello_2', 'Hello_1' ]
+
+
+let str = "hello";
+//console.log( str.reverse() );
+//TypeError: str.reverse is not a function
+console.log(
+    Array.from(str).reverse().toString().replaceAll(",","")
+);
+// 1) str ===> array                [ 'h', 'e', 'l', 'l', 'o' ]
+// 2) reverse()                     [ 'o', 'l', 'l', 'e', 'h' ]
+// 3) array ===> string             o,l,l,e,h
+// 4) replace all commas            olleh
+
+
+let str1 = "welcome";
+console.log(
+    Array.from(str1).reverse().toString().replace(/,/g, "")
+);
+//emoclew
+
+let str2 = "Welcome to JavaScript";
+console.log(
+    Array.from(str2).reverse().join("")
+);
+//tpircSavaJ ot emocleW
+
+
+let str3 = "ReactJS";
+console.log(
+    Array.from(str3).reverse().join("")
+);
+//SJtcaeR
+
+
+let arr41 = ["Angular14","ReactJS","VueJS","NodeJS","MongoDB"];
+//["MongoDB","NodeJS","VueJS","ReactJS","Angular14"]
+//["41ralugnA","SJtcaeR","SJeuV","SJedoN","BDognoM"]
+//["BDognoM","SJedoN","SJeuV","SJtcaeR","41ralugnA"]
+
+
+
+let arr42 = [10,20,30,40,50];
+console.log(arr42.slice(2,4));      //[ 30, 40 ]
+console.log(arr42.slice(0,1));      //[ 10 ]
+console.log(arr42.slice(1,2));      //[ 20 ]
+console.log(arr42.slice(2,3));      //[ 30 ]
+console.log(arr42.slice(3,4));      //[ 40 ]
+console.log(arr42.slice(4));        //[ 50 ]
+
+
+let arr43 = [1,2,3,4,5,6,7,8,9,10];
+//[6,7,8,9,10,1,2,3,4,5]
+let second_half = arr43.slice(5);
+let first_half = arr43.slice(0,5);
+console.log( second_half.concat(first_half) );
+console.log( [...second_half,...first_half] );
+
+
+let p1 = "Hello";
+console.log( p1.padStart(10,"*") );     //*****Hello
+
+let p2 = "Hello";
+console.log( p2.padEnd(15,"*") );       //Hello**********
+
+
+let p3 = "Hello";
+console.log(p3.padStart(10,"#").padEnd(15,"#"));
+//#####Hello#####
+
+
+let t1=" Hello ";
+console.log(t1.length);             //7
+console.log(t1.trim().length);      //5
+console.log(t1.trimStart().length); //6
+console.log(t1.trimEnd().length);   //6
+
+
+let s1 = "Welcome to JavaScript";
+console.log(s1.substring(0,7));         //Welcome
+console.log(s1.substring(8,10));        //to
+console.log(s1.substring(11));          //JavaScript
+
+
+let s2 = "welcome to reactjs";
+console.log(s2.substr(0,7));            //welcome
+console.log(s2.substr(8,2));            //to
+console.log(s2.substr(11,7));           //reactjs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
