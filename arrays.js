@@ -470,6 +470,112 @@ console.log(s2.substr(11,7));           //reactjs
 
 
 
+let arr44 = [10,20,30,40,50,60,70,80,90,100];
+arr44.copyWithin(3);
+console.log(arr44);
+//[10,20,30,10,20,30,40,50,60,70]
+
+
+let arr45 = [10,20,30,40,50,60,70,80,90,100];
+arr45.copyWithin(5);
+console.log(arr45);
+//[10, 20, 30, 40, 50,10, 20, 30, 40, 50]
+
+
+let arr46 = [10,20,30,40,50,60,70,80,90,100];
+arr46.copyWithin(2,5);
+console.log(arr46);
+//[10,  20, 60, 70,  80, 90, 100, 80, 90, 100]
+
+
+let arr47 = [10,20,30,40,50,60,70,80,90,100];
+arr47.copyWithin(3,7);
+console.log(arr47);
+//[10,20,30,80,90,100,70,80,90,100]
+
+let arr48 = [10,20,30,40,50,60,70,80,90,100];
+arr48.copyWithin(2,4,7);
+console.log(arr48);
+//[10, 20, 50, 60,  70, 60, 70, 80, 90, 100]
+
+
+let arr49 = [10,20,30,40,50,60,70,80,90,100];
+arr49.copyWithin(1,4,8);
+console.log(arr49);
+//[10,50,60,70,80,60,70,80,90,100]
+
+
+let arr50 = [1,2,3,4,5];
+console.log( arr50.fill(100) ); //[ 100, 100, 100, 100, 100 ]
+console.log( arr50.fill(200,1));//[ 100, 200, 200, 200, 200 ]
+console.log( arr50.fill(300,2,3)); //[ 100, 200, 300, 200, 200 ]
+console.log( arr50.fill(400,3,4));//[ 100, 200, 300, 400, 200 ]
+console.log( arr50.fill(500,4)); //[ 100, 200, 300, 400, 500 ]
+
+
+console.log( "Hello".repeat(5) );
+//HelloHelloHelloHelloHello
+
+let split_str = "welcome to javascript";
+console.log( split_str.split(" ") );
+//[ 'welcome', 'to', 'javascript' ]
+
+
+let split_str1 = "welcome";
+console.log( split_str1.split("") );
+
+
+let arr51 = [10,20,30,10,20,10,20];
+console.log( arr51.lastIndexOf(10) ); //5
+console.log( arr51.lastIndexOf(20) ); //6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
