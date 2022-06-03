@@ -15,15 +15,265 @@
 
             Arrays ---- []
 
-            data ---- key & value pairs
+            data ----  key & value pairs
 
                      key & value separated by using ":"
 
                     key & value pairs are separated by using ","
-
-
-
-
-
-
 -->
+<!--
+<script>
+    let obj = {
+        "sub_one" : "ReactJS",
+        "sub_two" : "NodeJS",
+        "sub_three" : "MongoDB"
+    };
+    //1) . (dot operator)
+    //2) [] (square operator)
+    //3) for...in loop
+    //4) destructuring
+    console.log( obj.sub_one,
+                 obj.sub_two,
+                 obj.sub_three );           //ReactJS NodeJS MongoDB
+    console.log( obj["sub_one"],
+                 obj["sub_two"],
+                 obj["sub_three"]);         //ReactJS NodeJS MongoDB
+    for(let key in obj){
+        console.log(key);
+        console.log(obj[key]);
+    }
+    const {sub_one,sub_two,sub_three} = obj;
+    console.log(sub_one,sub_two,sub_three);   //ReactJS NodeJS MongoDB
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+    delete obj.key3;
+    delete obj.key1;
+    console.log(obj);               //{key2: 'Hello_2'}
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+    console.log( Object.keys(obj) );            
+                        //['key1', 'key2', 'key3']
+    console.log( Object.values(obj) );          
+                        //['Hello_1', 'Hello_2', 'Hello_3']
+</script>
+-->
+
+<!--
+<script>
+   let obj = {};
+   obj["key1"] = "Hello_1";
+   obj["key2"] = "Hello_2";
+   obj["key3"] = "Hello_3";
+   console.log(obj);
+   //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+    obj["key1"] = "Welcome_1";
+    obj["key2"] = "Welcome_2";
+    obj["key3"] = "Welcome_3";
+    console.log(obj);
+    //{key1: 'Welcome_1', key2: 'Welcome_2', key3: 'Welcome_3'}
+</script>
+-->
+
+<!--
+<script>
+    let obj1 = {"key1":"Hello_1"};
+    let obj2 = {"key2":"Hello_2"};
+    let obj3 = {"key3":"Hello_3"};
+    let obj = {...obj1,...obj2,...obj3};    //ES6
+    console.log(obj);
+    //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+    console.log(Object.assign(obj1,obj2,obj3));
+    //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+<!--
+<script>
+    let obj1 = {
+        "key1" : "Hello_1"
+    };
+    let obj2 = {
+        ...obj1,
+        "key2" : "Hello_2"
+    };
+    console.log(obj2);
+    //{key1: 'Hello_1', key2: 'Hello_2'}
+</script>
+-->
+
+<!--
+<script>
+    let obj1 = {
+        "key1" : "Hello_1"
+    };
+    let obj2 = {
+        ...obj1,
+        "key2" : "Hello_2"
+    };
+    let obj3 = {
+        ...obj2,
+        "key3" : "Hello_3"
+    };
+    console.log(obj3);
+    //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key1" : "Hello_2",
+        "key2" : "Hello_3",
+        "key2" : "Hello_4",
+        "key3" : "Hello_5",
+        "key1" : "Hello_6"
+    };
+    console.log(obj);
+    //{key1: 'Hello_6', key2: 'Hello_4', key3: 'Hello_5'}
+</script>
+-->
+
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_1",
+        "key3" : "Hello_1"
+    };
+    console.log(obj);
+    //{key1: 'Hello_1', key2: 'Hello_1', key3: 'Hello_1'}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
