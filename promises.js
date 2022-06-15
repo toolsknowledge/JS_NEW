@@ -100,7 +100,7 @@
     });
 */
 
-
+/*
 let promise1 = new Promise((resolve,reject)=>{
     resolve("Hello_1");
 });
@@ -114,7 +114,7 @@ let promise3 = new Promise((resolve,reject)=>{
 });
 
 
-/*
+
     promise1.then((posRes)=>{
         console.log(posRes);
     },(errRes)=>{
@@ -143,12 +143,129 @@ let promise3 = new Promise((resolve,reject)=>{
     //[ 'Hello_1', 'Hello_2', 'Hello_3' ]
 */
 
-Promise.race([promise1,promise2,promise3]).then((posRes)=>{
-    console.log(posRes);
-},(errRes)=>{
-    console.log(errRes);
-});
-//Hello_1
+
+/*
+    Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+        console.log(posRes);
+    },(errRes)=>{
+        console.log(errRes);
+    });
+    //Hello_1
+*/
+
+
+/*
+    let promise1 = new Promise((resolve,reject)=>{
+        resolve("Hello_1");
+    });
+    let promise2 = new Promise((resolve,reject)=>{
+        resolve("Hello_2");
+    });
+    let promise3 = new Promise((resolve,reject)=>{
+        reject("Error");
+    });
+
+
+        Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+            console.log(posRes);
+        },(errRes)=>{
+            console.log(errRes);
+        });
+
+
+    Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
+        console.log(posRes);
+    },(errRes)=>{
+        console.log(errRes);
+    });
+*/
+
+/*
+    let promise1 = new Promise((resolve,reject)=>{
+        resolve("Hello");
+    });
+    async function my_fun(){
+        let res = await promise1;
+        console.log(res);
+    };
+    my_fun();               //Hello
+*/
+function add(num){
+    return new Promise((resolve,reject)=>{
+        resolve(num+5);
+    })
+};
+function sub(num){
+    return new Promise((resolve,reject)=>{
+        resolve(num-3);
+    })
+};
+function mul(num){
+    return new Promise((resolve,reject)=>{
+        resolve(num*2);
+    })
+};
+function div(num){
+    return new Promise((resolve,reject)=>{
+        resolve(num/2-2);
+    })
+}
+async function consume(){
+    let addRes = await add(5);
+    let subRes = await sub(addRes);
+    let mulRes = await mul(subRes);
+    let divRes = await div(mulRes);
+    console.log(addRes, subRes, mulRes, divRes);
+};
+consume();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

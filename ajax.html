@@ -1,0 +1,80 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajax Calls</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+       <script>
+            $.ajax({
+                method : "GET",
+                url : "https://www.w3schools.com/angular/customers.php",
+                success : (posRes)=>{
+                    console.log(posRes);
+                },
+                error : (errRes)=>{
+                    console.log(errRes);
+                }
+            });
+       </script>
+    </body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+           let promise1 = new Promise((resolve,reject)=>{
+                $.ajax({
+                    method : "GET",
+                    url : "https://www.w3schools.com/angular/customers.php",
+                    success : (posRes)=>{
+                        resolve(posRes);
+                    },
+                    error : (errRes)=>{
+                        reject(errRes);
+                    }
+                })
+           });
+           async function consume(){
+                let res = await promise1;
+                console.log(res);
+           };
+           consume();
+        </script>
+    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX Calls</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <script>
+            $.ajax({
+                method : "POST",
+                url : "http://test-routes.herokuapp.com/test/uppercase",
+                data : {"message":"cherisoft"},
+                success : (posRes)=>{
+                    console.log("Hello");
+                    console.log(posRes);
+                },
+                error : (errRes)=>{
+                    console.log(errRes);
+                }
+            });
+        </script>
+    </body>
+</html>
