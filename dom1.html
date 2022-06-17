@@ -1,0 +1,76 @@
+<!--
+<button onclick="my_fun()">Click Me</button>
+<script>
+    function my_fun(){
+        console.log("button clicked");
+    }
+</script>
+-->
+
+<!--
+<button>Click Me</button>
+<script>
+    let btn = document.querySelector("button");
+    btn.onclick = func_one;
+    function func_one(){
+        console.log("button clicked");
+    }
+</script>
+-->
+
+<!--
+<button>Click Me</button>
+<script>
+    let btn = document.querySelector("button");
+    document.addEventListener("click",func_one);
+    function func_one(){
+        console.log("button clicked");
+    }  
+    document.removeEventListener("click",func_one);  
+</script>
+-->
+
+
+<p>Paragraph1</p>
+<p>Paragraph2</p>
+<p>Paragraph3</p>
+<p>Paragraph4</p>
+<p>Paragraph5</p>
+
+<div>Division1</div>
+<div>Division2</div>
+<div>Division3</div>
+<div>Division4</div>
+<div>Division5</div>
+
+
+<script>
+    // let element = document.querySelector("p");
+    // element.style.color = "red";
+
+
+    // let allParagraphs = document.querySelectorAll("p");
+    // for(let p of allParagraphs){
+    //     p.style.color = "red";
+    // }
+
+    // let division = document.querySelector("div");
+    // division.style.color = "red";
+
+
+    let allDivisions = document.querySelectorAll("div");
+    for(let div of allDivisions){
+        div.style.backgroundColor = "blue";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
