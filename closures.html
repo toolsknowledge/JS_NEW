@@ -1,0 +1,71 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closures</title>
+    </head>
+
+    <body>
+      <script>
+         function func_one(){
+            let x = 10;
+            let y = 20;
+            return ()=>{
+                console.log(x);
+                console.log(y);
+            }
+         }
+         console.dir( func_one() );         //0: Closure (func_one) {x: 10, y: 20}
+      </script>  
+    </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closures</title>
+    </head>
+
+    <body>
+        <script>
+            for(let i=0;i<5;i++){
+
+                //ES9
+                //IIFE
+                //Immidiate Invokable Functional Expression
+                //Syntax
+                //(()=>{})()
+
+                // ((i)=>{
+                //     setTimeout(()=>{
+                //             console.log(i);
+                //     },5000);
+                // })(i)
+
+                 //ES6
+                 //let
+                 setTimeout(()=>{
+                    console.log(i);
+                 },5000);   
+
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

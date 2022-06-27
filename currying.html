@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currying</title>
+    </head>
+
+    <body>
+        <!-- <script>
+            function func_one(param1){
+                return (param2)=>{
+                    return (param3)=>{
+                        console.log(param1+param2+param3);
+                    }
+                }
+            }
+            func_one(10)(20)(30);
+        </script> -->
+
+        <script>
+            function func_one(param1){
+                return func_two;
+            }
+            function fun_two(param2){
+                return func_three;
+            }
+            function func_three(param3){
+                console.log(param3);
+            }
+        </script>
+    </body>
+</html>
