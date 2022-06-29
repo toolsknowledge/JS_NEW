@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX Calls</title>
+        <!-- CDN (JQuery)-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $.ajax({
+                method : "GET",
+                url : "https://www.w3schools.com/angular/customers.php",
+                success : (posRes)=>{
+                    let obj = JSON.parse(posRes)
+                    //Destructuring
+                    let {records} = obj; 
+                    console.log(records);
+                },
+                error : (errRes)=>{
+                    console.log(errRes);
+                }
+            });
+        </script>
+    </body>
+</html>
