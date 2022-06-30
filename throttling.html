@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Throttling</title>
+    </head>
+
+    <body>
+        <button id="my_btn">Click Me</button>
+    </body>
+
+    <script>
+
+        const throttle = (fn,delay)=>{
+            let x = 0;
+            return (...args)=>{
+                let now = new Date().getTime();
+                if(now-x<delay){
+                    return;
+                }
+                x=now;
+                return fn(...args);
+            }
+        };
+
+
+
+        document.getElementById("my_btn").addEventListener("click",throttle((event)=>{
+            console.log("welcome to throttle");
+        },5000)); 
+    </script>
+</html>

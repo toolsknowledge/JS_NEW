@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Handling</title>
+    </head>
+    <body>
+        <input type="text" id="uname">
+        <br><br>
+        <input type="password" id="upwd">
+        <br><br>
+        <button onclick="login()">Login</button>
+        <button ondblclick="setFn()">Set Data</button>
+        <button onkeydown="func_one()">Key</button>
+
+    </body>
+    <script>
+        function login(){
+            document.getElementById("uname").value == "admin" && document.getElementById("upwd").value == "admin" ? alert("Login Success") : alert("Login Fail");
+        }
+
+
+        function setFn(){
+            document.getElementById("uname").value = "admin";
+            document.getElementById("upwd").value = "admin";
+        }
+
+        function func_one(){
+            console.log("Hello");
+        }
+
+    </script>
+</html>
