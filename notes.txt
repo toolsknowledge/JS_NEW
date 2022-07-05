@@ -1,0 +1,176 @@
+NodeJS
+******
+    - NodeJS is backend Technology
+
+    - we will develop NodeJS Applications with the help of JavaScript
+
+    - NodeJS depending on ExpressJS Framework to develop Rest API'S
+
+                GET
+
+                POST
+
+                PUT
+
+                DELETE
+
+                ---
+                ---
+                ---
+
+    - we will test above Rest API'S with the help of "Postman".
+
+
+    - NodeJS supports libraries/modules.
+
+    - above libraries we will download with the help of "yarn/npm" tool
+
+
+libraries/modules
+*****************
+1) express
+    used to develop rest api's
+
+2) mongodb
+    used to connect to mongodb database
+
+3) cors
+    used to enable the communication between ports.
+
+4) mysql
+    used to connect to mysql database
+
+5) mssql
+    used to connect to sqlserver
+
+6) oradb
+    used to connect to oracle database
+
+7) http
+    used to create the http servers
+
+8) jwt-simple
+    used to generate the "tokens"
+    these tokens are used to maintain the "token based authentication" system
+    jwt stands for "json web token"
+
+
+
+MERN Stack Application
+**********************
+
+M - MongoDB
+
+E - ExpressJS
+
+R - ReactJS
+
+N - NodeJS
+
+
+1) create account with AWS Server
+
+    URL : https://portal.aws.amazon.com/billing/signup?refid=14a4002d-4936-4343-8211-b5a150ca592b&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email
+
+
+
+2) deploy images to s3 bucket
+
+    images deployed into aws server successfully
+
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p1.jpg
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p2.jpg
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p3.jpg
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p4.jpg
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p5.jpg
+
+    https://fullstackbucketex.s3.us-west-2.amazonaws.com/p6.jpg
+
+
+
+
+3) create mongodb account
+
+        URL : https://www.mongodb.com/cloud/atlas/register
+
+    database details:
+
+    URL : mongodb+srv://admin:admin@cluster0.jhgdxa1.mongodb.net/?retryWrites=true&w=majority
+
+    database name : fullstackdb
+
+    collection name : products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
